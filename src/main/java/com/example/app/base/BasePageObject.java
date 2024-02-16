@@ -25,6 +25,12 @@ public class BasePageObject {
     find(by).click();
   }
 
+  public void clickXTime(By by, int count){
+    for (int i = 0; i < count; i++){
+      find(by).click();
+    }
+  }
+
   public String getText(By by){
     return find(by).getText();
   }
